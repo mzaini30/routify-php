@@ -18,19 +18,14 @@ Route::add('/user/([0-9]*)/edit', function($id) {
 // Run the router
 Route::run('/');
 
-function getDirContents($dir, &$results = array()) {
-    $files = scandir($dir);
+echo("<br><br>");
 
-    foreach ($files as $key => $value) {
-        $path = realpath($dir . DIRECTORY_SEPARATOR . $value);
-        if (!is_dir($path)) {
-            $results[] = $path;
-        } else if ($value != "." && $value != "..") {
-            getDirContents($path, $results);
-            $results[] = $path;
-        }
+// Construct the iterator
+$it = new RecursiveDirectoryIterator("pages");
+
+// Loop through files
+foreach(new RecursiveIteratorIterator($it) as $file) {
+    if ($file->getExtension() == 'php') {
+        echo $file . "<br>";
     }
-
-    return $results;
 }
-var_dump(getDirContents("pages"));
