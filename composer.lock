@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "622197c4feaa8affeb2e5fe4ceb7881f",
+    "packages": [
+        {
+            "name": "steampixel/simple-php-router",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/steampixel/simplePHPRouter.git",
+                "reference": "19ab110e796380e88a9d15e73824976c99acb6cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/steampixel/simplePHPRouter/zipball/19ab110e796380e88a9d15e73824976c99acb6cc",
+                "reference": "19ab110e796380e88a9d15e73824976c99acb6cc",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Steampixel": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SteamPixel",
+                    "email": "info@steampixel.de"
+                }
+            ],
+            "description": "This is a simple and small PHP router that can handel the whole url routing for your project.",
+            "support": {
+                "issues": "https://github.com/steampixel/simplePHPRouter/issues",
+                "source": "https://github.com/steampixel/simplePHPRouter/tree/0.4.1"
+            },
+            "time": "2020-05-15T10:09:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
